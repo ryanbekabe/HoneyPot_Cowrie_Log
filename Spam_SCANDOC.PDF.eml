@@ -1,0 +1,240 @@
+X-Atlas-Received: from 10.240.94.250 by atlas110.free.mail.sg3.yahoo.com with http; Thu, 25 Jun 2020 00:22:28 +0000
+Return-Path: <koestoer@eng.ui.ac.id>
+Received: from 152.118.24.81 (EHLO biawak.ui.ac.id)
+ by atlas110.free.mail.sg3.yahoo.com with SMTPs; Thu, 25 Jun 2020 00:22:28 +0000
+X-Originating-Ip: [152.118.24.81]
+Received-SPF: pass (domain of eng.ui.ac.id designates 152.118.24.81 as permitted sender)
+Authentication-Results: atlas110.free.mail.sg3.yahoo.com;
+ dkim=pass header.i=@ui.ac.id header.s=mail;
+ spf=pass smtp.mailfrom=eng.ui.ac.id;
+ dmarc=success(p=QUARANTINE,sp=QUARANTINE) header.from=eng.ui.ac.id;
+X-Apparently-To: ryanhidayat014@yahoo.co.id; Thu, 25 Jun 2020 00:22:28 +0000
+X-YMailISG: v7McN8EWLDuLRiV1Ia5KkG5N9eJXL0AvZnpm_TNyLw9k3fMQ
+ a8i5kQ9Lddbi2cmh.zWX2XHoH7lxb495JhyEbp2b7Ka9haHzJzOgVK1xmyYd
+ q1uP8_tCBP9bTgvznXRDbmNehAC26Ezbp.KtFPfxOHScoJuKBck81tn.WpUw
+ ibbeE4mlagmc0pPC5andvmqiRcjBFkIWiEgTbm8DvwsxkQfQcelHwfLS1NnC
+ HmnpOK9LjTooB2_lEARghS2d_3xGQqlQ0bAEYAa8j6aOoOt6hlvoGyc4aRLb
+ JGDbTgO56ECUq7u.9bO6nPtCVN9uMcvL5u0pjMGHRacisaJ6u6AOYxIuE4aM
+ LHvDYZ0B2zVnaVcepwSuRuqn0klMQ4zE7QIKs_ruyX4bXlIkiQ3vhyUzGSxZ
+ IpsW6tzWNKpIvLHU8A5Oq0jhWh8ucZHp3Tjy6DRNcQvV47OEFnAWCBfrrhWy
+ 0YI56CsWs8fSFkVKwqjNGNAwH0M6oeNWa_6LJgiRvqpCWhs.hQ1hLj5Qt8rx
+ NbylYoG3zjqDoyNYNHOpAm3UIISipCvnlZOibVs8lHKUyZj_9aF4rr0r6sTX
+ _Gvr__JIa4zeUrLsVSNTKc4xAMb32AHtMseoMJYn_bZ6H0A2E6OxBJZoDg0.
+ gxvne78CU2bNdgYC1IUAlxRGJGqMcGX1oqGlRjME4IxtKz4875l5msgMOheJ
+ NJDWDKLsC_P5D9q7BpntDyL4q80ueAKCeyARorvZuzwuRux_sLBYFuBneRjY
+ Y4ZtLZURbLDIlCgzk9fyR7pCRxH9faDyZrj5gRozKrjRJROjnzd3SOrcjMEu
+ DVY0AGWIMpAeg4T..U1IPvWNN4AsuTXHlvPnbvGOLcL1aCV7rTOiAmusy2EL
+ FRLifMGsDtTPYgv6OrKR5FtTnDwvQ7ZxJj2W7TO1KzrfUyDiKQKXLI0nxF1e
+ a_xq1swkvkyGNZyXIXQx_dQ8d_Zy56nNY9X6w9KXPIVNWo0Hu5QDe04MgGXS
+ htAVQHWbrTUPIebzKHjMbK8OjNtdraDn1GCw_6idTEh6q9gTihqmqt8YGhLl
+ 1Ie_hvj5KAudQfxZUGdNxMXs3GG_9n9Erig3n2GUAk2sH0MCIx_MYmxJXPIR
+ YGerPzoNSI5Lt6Q8Ks.aoPAFv8IXnuQkt_4vkKxUIA7EEn58m7a3AXSY8JJH
+ 15m1O582IBxLL9rlxp.w4k4Nv6WvUIyy0dILKXnA
+X-Originating-IP: [152.118.24.81]
+Received: from 10.207.153.75  (EHLO biawak.ui.ac.id) (152.118.24.81)
+  by mta4386.mail.sg3.yahoo.com with SMTPS; Thu, 25 Jun 2020 00:22:28 +0000
+Received: from biawak.ui.ac.id (localhost.localdomain [127.0.0.1])
+	by biawak.ui.ac.id (Postfix) with ESMTP id D0A991615B4;
+	Thu, 25 Jun 2020 07:22:24 +0700 (WIB)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=ui.ac.id; h=mime-version
+	:content-type:date:from:to:subject:message-id; s=mail; bh=l/rI0q
+	7XRMTngkPSmlHw78V8MVw=; b=lV9NnND9nnT5D+M/yaEUyuowhk7I40ip+ZWPR8
+	eAxz9FF2a9JR1f/x72h/Ab6rIYRqCCC6rR58XopNQlmGmuixQJY7y9Z/pW4cO/37
+	gP6rJBOiJDYDF7G4VPDb61losoTe6DMOKvojZ2IBeE7O3zwkXQ7Ckef1lR9y9SSu
+	5plWE=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=ui.ac.id; h=mime-version
+	:content-type:date:from:to:subject:message-id; q=dns; s=mail; b=
+	ZaCVnU2Te/t5EmSQx7cq8+grcd1scGbF2Vn9cWG10nq3txQj0C/Y/BWWq+kYINue
+	j1sfyXFcEiSRqJ0ns/+f8wEXEaa6GrG0DXGVfnvrzJ/JZV4EoU37lo0B9l7NZ2xV
+	DiIwTyyPVclYx4d6NtqaXiDWcIPB/daRt2ILkx2vUIs=
+Received: from biawak.ui.ac.id (localhost.localdomain [127.0.0.1])
+	by biawak.ui.ac.id (Postfix) with ESMTP id C8B331615C2;
+	Thu, 25 Jun 2020 07:22:22 +0700 (WIB)
+Received: from smtp.eng.ui.ac.id ([152.118.148.17] helo=smtp.eng.ui.ac.id)
+	by biawak.ui.ac.id with SMTP (2.4.3); 25 Jun 2020 07:22:22 +0700
+Received: from webmail.eng.ui.ac.id (smtp.eng.ui.ac.id [127.0.0.1])
+	(Authenticated sender: koestoer@eng.ui.ac.id)
+	by smtp.eng.ui.ac.id (Postfix) with ESMTPSA id AAC92980119;
+	Thu, 25 Jun 2020 07:14:23 +0700 (WIB)
+Received: from nginx.eng.ui.ac.id ([152.118.148.15] helo=webmail.eng.ui.ac.id)
+	by ASSP.nospam with SMTPSA(AES256-SHA) (2.4.3); 25 Jun 2020 07:14:23 +0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_4470a444380b1c7b07ed64cb241c41b6"
+Date: Thu, 25 Jun 2020 00:14:20 +0000
+From: Raldi Artono Koestoer <koestoer@eng.ui.ac.id>
+To: undisclosed-recipients:;
+Subject: Fwd: SCANDOC.PDF
+Message-ID: <41866556ba0f5f882ec828353cb07296@eng.ui.ac.id>
+X-Sender: koestoer@eng.ui.ac.id
+User-Agent: Roundcube Webmail/1.0.2
+X-Assp-Version: 2.4.3(14258) on ASSP.nospam
+X-Assp-ID: ASSP.nospam m1-44063-07564
+X-Assp-Session: 7F599C7C8C88 (mail 1)
+X-Assp-Envelope-From: koestoer@eng.ui.ac.id
+X-Assp-Intended-For: osmen@ristek.go.id
+X-Assp-Intended-For: owinjs@yahoo.com
+X-Assp-Intended-For: parsetijonotajib@yahoo.com
+X-Assp-Intended-For: chor.cheuk@ldschurch.org
+X-Assp-Intended-For: dailynews@enews.pcmag.com
+X-Assp-Intended-For: pm_drpm@ui.ac.id
+X-Assp-Intended-For: felixdenola@yahoo.com
+X-Assp-Intended-For: poerwitos@yahoo.com
+X-Assp-Intended-For: poppysuryana@yahoo.com
+X-Assp-Intended-For: pemesanan@mikron123.com
+X-Assp-Intended-For: purwandoko@ristek.go.id
+X-Assp-Intended-For: putri.nilasari@yahoo.com
+X-Assp-Intended-For: putrifathimah13@yahoo.com
+X-Assp-Intended-For: qoyum.tjandranegara@energi-mp.com
+X-Assp-Intended-For: ralkoest@yahoo.co.uk
+X-Assp-Intended-For: raldi@inkubator-gratis.org
+X-Assp-Intended-For: trust_dan_hope@yahoo.com
+X-Assp-Intended-For: ramaditabudhi@yahoo.com
+X-Assp-Intended-For: ramiro.cristiano65@yahoo.co.uk
+X-Assp-Intended-For: ranggisahmura@yahoo.com
+X-Assp-Intended-For: ratnamail2003@yahoo.com
+X-Assp-Intended-For: rehan@inkubator-gratis.org
+X-Assp-Intended-For: reni.kirana@btpn.com
+X-Assp-Intended-For: reski.septiana@live.com
+X-Assp-Intended-For: retno.wigajatri@ui.ac.id
+X-Assp-Intended-For: me_reyhan@yahoo.com
+X-Assp-Intended-For: riantowibowo_umk@yahoo.com
+X-Assp-Intended-For: weeriki2001@yahoo.com
+X-Assp-Intended-For: ridhoirwansyah@ymail.com
+X-Assp-Intended-For: rosyid_malang@yahoo.com
+X-Assp-Intended-For: rika_ame_lia@yahoo.co.id
+X-Assp-Intended-For: riris-sarumpaet@indo.net.id
+X-Assp-Intended-For: rleksono@ristek.go.id
+X-Assp-Intended-For: rosnani@poltekkespalembang.ac.id
+X-Assp-Intended-For: rsonline@global.rs-email.com
+X-Assp-Intended-For: santamariapml@yahoo.com
+X-Assp-Intended-For: ryanhidayat014@yahoo.co.id
+X-Assp-Intended-For: sabariman@uib.ac.id
+X-Assp-Intended-For: sahlan@che.ui.ac.id
+X-Assp-Intended-For: sales.clara@commail00.cc
+X-Assp-Intended-For: hana.misrad@yahoo.com
+X-Assp-Intended-For: sam_joyodiharjo@yahoo.co.id
+X-Assp-Intended-For: sari.octaviani@ui.ac.id
+X-Assp-Intended-For: satriadharma2002@yahoo.com
+X-Assp-Intended-For: senna.gumilar@pertamina.com
+X-Assp-Intended-For: service@intl.paypal.com
+X-Assp-Intended-For: setyosuprijadi@yahoo.com
+X-Assp-Intended-For: shifasyahidatulwafa@ymail.com
+X-Assp-Intended-For: sintahamidatussaidah@yahoo.com
+X-Assp-Intended-For: sirrichard_dalton@yahoo.co.uk
+X-Assp-Intended-For: sitawangsa@cbn.net.id
+X-Assp-Intended-For: sitta.azmi@miti.or.id
+X-Assp-Intended-For: team@konfirmasi.com
+X-Assp-Intended-For: arnold@batan.go.id
+X-Assp-Intended-For: soni_ndablack@yahoo.com
+X-Assp-Intended-For: masongki@yahoo.com
+X-Assp-Intended-For: sotya.astutiningsih@ui.ac.id
+X-Assp-Intended-For: sotya@metal.ui.ac.id
+X-Assp-Intended-For: abdinagoro@yahoo.com
+X-Assp-Intended-For: harjanto@metal.ui.ac.id
+X-Assp-Intended-For: nining_rbcl@yahoo.co.id
+X-Assp-Intended-For: mutia_rz@yahoo.com
+X-Assp-Intended-For: subowo@timboel.net
+X-Assp-Intended-For: suci_megawati89@yahoo.co.id
+X-Assp-Intended-For: sujadiwiranata@yahoo.com
+X-Assp-Intended-For: sukamto.sukowinanto@donggi-senoro.com
+X-Assp-Intended-For: suoneto79@yahoo.co.id
+X-Assp-Intended-For: suparlan@live.com
+X-Assp-Intended-For: support@doku.com
+X-Assp-Intended-For: support@zenziva.com
+X-Assp-Intended-For: suprapto.soemardan@yahoo.com
+X-Assp-Intended-For: surip_tintin@yahoo.co.id
+X-Assp-Intended-For: suryono.nugroho@yahoo.co.id
+X-Assp-Intended-For: susiswosiswo@yahoo.co.id
+X-Assp-Intended-For: taufik@isco.co.id
+X-Assp-Intended-For: tf1392111@talkfusionewallet.com
+X-Assp-Intended-For: thermofluid@ugm.ac.id.edas.info
+X-Assp-Intended-For: marketing.g@toktok.id
+X-Assp-Intended-For: sales03@tomtop.net
+X-Assp-Intended-For: tresnasoemardi@yahoo.com
+X-Assp-Intended-For: anto_tenan@yahoo.com
+X-Assp-Intended-For: trimitra.mahesa@ui.ac.id
+X-Assp-Intended-For: uce_fauziah@yahoo.com
+X-Assp-Intended-For: expo@uinnovationfest.com
+X-Assp-Intended-For: wr4@its.ac.id
+X-Assp-Intended-For: ephi_air@yahoo.com
+X-Assp-Intended-For: wachyuhadi@yahoo.com
+X-Assp-Intended-For: wahyu.koestoer@student.adelaide.edu.au
+X-Assp-Intended-For: wkoestoer@aol.com
+X-Assp-Intended-For: wati123@ui.ac.id
+X-Assp-Intended-For: wgun@ristek.go.id
+X-Assp-Intended-For: wawan.mardiyanto@yahoo.co.id
+X-Assp-Intended-For: wee_olive@yahoo.com
+X-Assp-Intended-For: wentika.putrika@itk.ac.id
+X-Assp-Intended-For: winnie_donk@yahoo.com
+X-Assp-Intended-For: sena_wiraguna@fmi.com
+X-Assp-Intended-For: wssma2019@wssma-conf.org
+X-Assp-Intended-For: carry_cd@hotmail.com
+X-Assp-Intended-For: y_rustina@ui.ac.id
+X-Assp-Client-TLS: yes
+X-Assp-Server-TLS: yes
+X-Assp-Version: 2.4.3(15059) on biawak.ui.ac.id
+X-Assp-ID: biawak.ui.ac.id 
+X-Assp-Session: E504FF14 (mail 1)
+X-Assp-Original-Subject: Fwd: SCANDOC.PDF
+Content-Length: 1587
+
+--=_4470a444380b1c7b07ed64cb241c41b6
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain
+
+ 
+
+Yang terhormat, 
+
+Mohon temukan dokumen terlampir yang dibagikan melalui Microsoft
+SharePoint. 
+
+SCANDOC.PDF [2]
+
+-- 
+
+======================
+Raldi Artono Koestoer
+Lihat web kami yg baru http:// [1]koestoer.wordpress.com
+Email dan FB : koestoer@eng.ui.ac.id
+Incubator SMS Gateway 0856 5931 2070
+======================
+ 
+
+Links:
+------
+[1] http://www.inkubator-gratis.org
+[2] https://downloadable.us-south.cf.appdomain.cloud/
+
+--=_4470a444380b1c7b07ed64cb241c41b6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html><body style=3D'font-size: 10pt; font-family: "Book Antiqua",Palatino,=
+serif'>
+<p>&nbsp;</p>
+<div>Yang terhormat,</div>
+<div>&nbsp;</div>
+<div>Mohon temukan dokumen terlampir yang dibagikan melalui Microsoft Share=
+Point.</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><strong><a href=3D"https://downloadable.us-south.cf.appdomain.cloud/">=
+SCANDOC.PDF </a><br /></strong></div>
+<div><strong>&nbsp;</strong></div>
+<div>
+<div>&nbsp;</div>
+</div>
+<div>-- <br />
+<pre>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Raldi Artono Koestoer<br />Lihat web kami yg baru <a href=3D"http://www.ink=
+ubator-gratis.org">http://</a>koestoer.wordpress.com
+Email dan FB : koestoer@eng.ui.ac.id
+Incubator SMS Gateway 0856 5931 2070
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D</pre>
+</div>
+</body></html>
+
+--=_4470a444380b1c7b07ed64cb241c41b6--
