@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>Welcome Page - IndiHome</title>
+		<meta name="description" content="Welcome Page - IndiHome" />
+	    <meta name="keywords" content="Welcome Page - IndiHome" />
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=320,initial-scale=1.0'>	
+
+		<link rel="stylesheet" type="text/css" href="https://welcome.indihome.co.id/assetsnew/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="https://welcome.indihome.co.id/assetsnew/css/style_new.css" />		
+		<link rel="stylesheet" type="text/css" href="https://welcome.indihome.co.id/assetsnew/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://welcome.indihome.co.id/assetsnew/js/jquery.3.1.0.js"></script> 
+		<script src="https://welcome.indihome.co.id/assetsnew/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+
+		<!-- Google Tag Manager Header -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5D96W7Z');</script>
+		<!-- End Google Tag Manager Header -->
+
+			<link rel="shortcut icon" href="https://welcome.indihome.co.id/assetsnew/images/indihome-favicon.png" type="image/x-icon">		
+	</head>
+	<body id="body">
+	<!-- Google Tag Manager Body (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D96W7Z"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager Body (noscript) -->
+	<div id="loader">
+	<div id="loading-logo"></div>
+	</div>		
+		<section class="background-images-container">
+			<div class="container">
+				<div class="row">
+					<div class="background-images-box-container">
+						<div class="greeting">
+							Selamat Pagi Pelanggan IndiHome
+						</div>
+					
+						<img src="https://welcome.indihome.co.id/assetsnew/images/top-nav.png" style="margin:20px auto 10px auto;max-width:100%;">
+						<div class="background-images-box">
+							<div class="background-box">
+									<a href="https://welcome.indihome.co.id/cta/2/161401217822/Indibox">
+									<img src="https://welcome.indihome.co.id/assets/indibox/indibox_v2_desktop_fix.jpg">
+								</a>
+								<!-- <div class="col-md-12" style="margin-top:10px;">
+									<div class="col-md-4">
+									</div>
+									<div class="col-md-4">
+									<a href="https://indibox.indihome.co.id/">
+										<div class="button-info">
+											Info Lebih Lanjut <span class="fa fa-angle-right"></span>
+										</div>
+									</a>
+									</div>
+									<div class="col-md-4">
+									</div>
+								</div> -->
+	
+								<!--
+								<img src="https://welcome.indihome.co.id/assetsnew/images/main-theme.jpg">
+								<h1>Dirgahayu Republik Indonesia<br>17 Agustus 2018</h1>
+								<p>Untuk melanjutkan browsing <a href="http://hanyajasa.com/"><span>Klik di sini</span></a></p>
+								-->
+							</div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</section>
+		
+	</body>
+</html>				
+
+
+
+<script>
+	$(document).ready(function(){
+		setTimeout(function(){
+			$("#loader").fadeOut(500);
+		}, 500);
+	});  		
+</script>		
+<link rel="stylesheet" href="https://welcome.indihome.co.id/assetsnew/css/animate.css" />
+<script src="https://welcome.indihome.co.id/assetsnew/js/wow.js"></script> 
+<script src="https://welcome.indihome.co.id/assetsnew/js/wow.min.js"></script> 
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+</script>
+
+<script>
+$(document).ready(function(){	
+	var timer;
+	var count = 10;
+	$("#counter").text(count);
+	timer = setTimeout(update, 1000);
+	function update()
+	{
+		if (count > 0)
+		{
+		   $("#counter").text(--count);
+		   timer = setTimeout(update, 1000);
+		}
+		else
+		{
+			window.location.replace("http://hanyajasa.com/");
+		}
+	}	
+});	
+</script>		
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-container">
+				<div class="col-md-6">
+				<div class="text-left">
+						<!-- <a href="https://indibox.indihome.co.id/">
+							<div class="button-info">
+								Info Lebih Lanjut <span class="fa fa-angle-right"></span>
+							</div>
+						</a> -->
+						<p>Halaman ini akan tertutup secara otomatis pada detik ke <span id="counter">10</span></p>
+				</div>
+				</div>
+				<div class="col-md-6">
+				<a href="http://hanyajasa.com/">
+					<div class="button-lanjut">
+						Lanjutkan Browsing  <span class="fa fa-angle-right"></span>
+					</div>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.text-left{
+		float:left;
+		/* margin-top:10px;
+		 */font-family:Robotto-medium;
+	}
+	.text-left span{
+		font-weight:bold;
+	}
+	.footer-container a:hover{
+		text-decoration:none;
+	}
+	.button-lanjut{
+		
+		background-color:#ee2e24;
+		color:#FFF;
+		padding:5px 10px;
+		width:250px;
+		font-family:Robotto-medium;
+		text-align:center;
+		font-size:20px;
+		float:right;
+	}
+	.button-info{
+		background-color:#00B05A;
+		color:#FFF;
+		padding:5px 10px;
+		width:250px;
+		font-family:Robotto-medium;
+		text-align:center;
+		font-size:20px;
+		float:left;
+	}
+	.footer-container{
+		height:70px;
+		position:relative;
+		padding:15px 0px;
+	}
+	.footer{
+		position:fixed;		
+		background-color:#EEE;
+		width:100%;
+		height:70px;
+		bottom:0px;
+	}
+</style>
+		<!-- ON ERROR IMAGE -->
+<script type="text/javascript">
+	function imgError(image) {
+		image.onerror = "";
+		image.src   = "https://cdn4.uzone.id/assets/uploads/others/uzone/620x350.jpg";
+		return true;
+	}
+	function imgErrorSmall(image){
+		image.onerror = "";
+		image.src   = "https://welcome.indihome.co.id/assetsnew/images/bola/no-logo.png";
+		return true;		
+	}
+</script>
+<style>
+	.greeting{
+		position:absolute;
+		top:4%;
+		font-family:Robotto-medium;
+		padding-left:20px;
+		font-size:24px;
+		color:#ee362c;
+		text-shadow:1px 1px 1px #888;
+	}
+	.background-images-box-container{
+		position:relative;
+	}
+</style>
